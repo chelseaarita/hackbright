@@ -21,6 +21,8 @@ class Food(object):
 starter = Food("gyoza", "ramen", "mochi")
 
 print starter.appetizer
+print starter.entrees
+print starter.desserts
 
 class Animals(object):
 	def __init__(self, name, color, weight):
@@ -31,3 +33,17 @@ class Animals(object):
 mammals = Animals("Lion", "Brown", 550)
 
 print mammals.name
+print mammals.color
+print mammals.weight
+
+class Plants(object):
+	def __init__(self, flowers, succulents, vegetables):
+		self.flowers = flowers
+		self.succulents = succulents
+		self.vegetables = vegetables
+
+organisms = Plants("Rose", "Zwartkop", "Corn")
+
+print organisms.flowers
+print organisms.succulents
+print organisms.vegetables
